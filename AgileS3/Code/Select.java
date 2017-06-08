@@ -9,9 +9,9 @@ public class Select
       
       Class.forName("org.postgresql.Driver");
 
-      String url = "jdbc:postgresql://217.182.171.28:5432/hendek";
-      String nom = "hendek";
-      String mdp = "hendek";
+      String url = "jdbc:postgresql://mon_ip:mon_port/ma_base";
+      String nom = "change_it";
+      String mdp = "change_it";
       con = DriverManager.getConnection(url,nom,mdp);
       stmt = con.createStatement();
       String query = "select * from personne";
