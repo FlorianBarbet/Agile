@@ -1,4 +1,4 @@
-/
+# Config SMTP IUT
 
 Configuration à appliquer
 
@@ -17,11 +17,12 @@ Utiliser une connexion sécurisé TLS (Thunderbird, ...) ou Ce serveur nécessit
 source : http://cri.univ-lille1.fr/Services-proposes/messagerie/configuration/SMTP/
 
 /
+# Openvpn
 
 tuto vpn : http://fil.univ-lille1.fr/documentation-vpn
 
 /
-
+# Slogan
 
 appelez les Hendek !
 Livraison chez toi, en moins de 2.
@@ -30,7 +31,7 @@ Exemple de creation de site de e-commerce en java : http://wayofcode.fr/site-de-
 /
 
 
-Command line instructions 
+# Command line instructions pour ceux qui ont du mal
 
 
 Git global setup 
