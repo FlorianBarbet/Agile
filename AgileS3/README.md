@@ -1,5 +1,3 @@
-localhost:8080/Conception_web/verify.jsp?tok=61ff1a88c8b02ac3abadd80e533b1de7&droit=0&login=salutsalutsaluto 
-
 /
 
 Configuration à appliquer
