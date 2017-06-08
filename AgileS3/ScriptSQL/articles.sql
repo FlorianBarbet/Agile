@@ -59,12 +59,12 @@ CREATE TABLE article(
 	CONSTRAINT check_image CHECK(image LIKE 'http%://%_.__%'),
 	CONSTRAINT check_prix CHECK(prix > 0.00)
 );
-INSERT INTO article(libelle,prix,stock) 
-VALUES ('bouteille vide',50.09,80000),
-('biscuit',7.00,70000);
-INSERT INTO article(libelle,prix,stock,category)
-VALUES('Livre pendu',40.00,50,'Culture'),
-('Manuel',80.00,500,'Culture');
+--INSERT INTO article(libelle,prix,stock) 
+--VALUES ('bouteille vide',50.09,80000),
+--('biscuit',7.00,70000);
+--INSERT INTO article(libelle,prix,stock,category)
+--VALUES('Livre pendu',40.00,50,'Culture'),
+--('Manuel',80.00,500,'Culture');
 CREATE TABLE infoart(
 	idart integer,
 	entreprise varchar(16) DEFAULT 'Hendek',
@@ -144,8 +144,6 @@ INSERT INTO article(libelle,description,category,stock,prix,image) VALUES('Super
 INSERT INTO article(libelle,description,category,stock,prix,image) VALUES('Belvedere Pure Vodka','Vodka','Autodefense',6400,41.60,'https://statics.monoprix.fr/course/g_1774679_pure-vodka.jpg');
 
 INSERT INTO article(libelle,description,category,stock,prix,image) VALUES('Biscuit','un biscuit','Alimentaire',70000,7,'http://www.filet-bleu.com/wp-content/uploads/2011/11/Biscuits-au-beurre.jpg');
-
-INSERT INTO article(libelle,description,category,stock,prix,image) VALUES('Livre Pendu','livre avec jeu du pendu','Culture',50,40,'http://www.renaud-bray.com/ImagesEditeurs/PG/1032/1032408-gf.jpg');
 
 INSERT INTO article(libelle,description,category,stock,prix,image) VALUES('Manuel de survie face aux poubelles','wut ?','Culture',500,80,'https://thumbs.dreamstime.com/x/manuel-avec-le-livre-dur-de-couverture-80128447.jpg');
 
