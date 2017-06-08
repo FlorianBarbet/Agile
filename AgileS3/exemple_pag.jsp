@@ -1,3 +1,5 @@
+<!-- Un exemple gérer une pagination en JSP avec notre cas à tester-->
+
 <%
 
 ArrayList<Integer> affichage = new ArrayList<>();
