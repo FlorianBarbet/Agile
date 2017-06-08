@@ -37,10 +37,10 @@ Command line instructions
 
 Git global setup 
 
-git config --global user.name "Alexandre RICHARD" 
+git config --global user.name "Prenom NOM" 
 
 
-git config --global user.email "alexandre.richard@etudiant.univ-lille1.fr" 
+git config --global user.email "prenom.nom@etudiant.univ-lille1.fr" 
 
 
 
@@ -48,7 +48,7 @@ Create a new repository
 
 git clone https://git-iut.univ-lille1.fr/barbetf/AgileS3.git 
 
-cd ProjeMode2016-O2 touch README.md 
+cd Pmon_dossier touch README.md 
 
 git add README.md 
 
@@ -64,7 +64,8 @@ cd existing_folder
 
 git init 
 
-git remote add origin https://git-iut.univ-lille1.fr/bonevai/ProjeMode2016-O2.git 
+git remote add origin https://mon_lien_git
+
 
 
 git add . 
@@ -78,7 +79,7 @@ Existing Git repository
 
 
 
-cd existing_repo git remote add origin https://git-iut.univ-lille1.fr/bonevai/ProjeMode2016-O2.git 
+cd existing_repo git remote add origin https://mon_lien_git
 
 
 git push -u origin --all git push -u origin --tags
