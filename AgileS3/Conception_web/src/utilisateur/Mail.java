@@ -22,14 +22,18 @@ import javax.mail.internet.MimeMessage;
 public class Mail {
 
 	/**
-	 * Envoyé un mail grace au bot :D
+	 * Envoyé un mail grace a un bot :D
+	 * Lors de ce tp tout mot de passe
+	 * à été modifié car ils apparaissaient en dur dans le code
+	 * ce n'est pas la peine d'essayer de les utiliser ;)
 	 * @param content
 	 * @param to
 	 */
 	public void sendMail(String content, String to){
 		Properties props = new Properties();
 		//props.put("mail.transport.protocol", "smtp");
-		props.put("mail.smtp.host", "smtps.univ-lille1.fr");
+		props.put("mail.smtp.host", "smtps.univ-lille1.fr");//il s'agit du server smtp de l'iut, veuillez le changer par le votre
+		//car ce serveur vous sera inutile si vous n'êtes pas étudiant à lille 1
 		props.put("mail.smtp.socketFactory.port", "465");
 		props.put("mail.smtp.socketFactory.class",
 				"javax.net.ssl.SSLSocketFactory");
@@ -39,14 +43,14 @@ public class Mail {
 		Session session = Session.getDefaultInstance(props,
 				new javax.mail.Authenticator() {
 			protected PasswordAuthentication getPasswordAuthentication() {
-				return new PasswordAuthentication("florian.barbet","Florian2*");
+				return new PasswordAuthentication("NOMDECOMPTE","MOTDEPASSE");
 			}
 		});
 
 		try {
 
 			Message message = new MimeMessage(session);
-			message.setFrom(new InternetAddress("florian.barbet@etudiant.univ-lille1.fr"));
+			message.setFrom(new InternetAddress("ADRESSE EMAIL D ENVOI"));
 			message.setRecipients(Message.RecipientType.TO,
 					InternetAddress.parse(to));
 			message.setSubject("Activation de votre compte HENDEK");
@@ -75,14 +79,14 @@ public class Mail {
 		Session session = Session.getDefaultInstance(props,
 				new javax.mail.Authenticator() {
 			protected PasswordAuthentication getPasswordAuthentication() {
-				return new PasswordAuthentication("florian.barbet","Florian2*");
+				return new PasswordAuthentication("MOT DE PASSE","MOT DE PASSE");
 			}
 		});
 
 		try {
 
 			Message message = new MimeMessage(session);
-			message.setFrom(new InternetAddress("florian.barbet@etudiant.univ-lille1.fr"));
+			message.setFrom(new InternetAddress("ADRESSE MAIL D ENVOI"));
 			message.setRecipients(Message.RecipientType.TO,
 					InternetAddress.parse(to));
 			message.setSubject("Votre commande est bien partie !");
